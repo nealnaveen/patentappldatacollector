@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="driver-management" />
+        <module name="config-server" />
+        <module name="trip-management" />
+        <module name="passenger-management" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config-server" target="1.8" />
+      <module name="driver-management" target="1.8" />
+      <module name="passenger-management" target="1.8" />
+      <module name="sample-redis-microservices-master" target="1.5" />
+      <module name="trip-management" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-server" options="-parameters" />
+      <module name="driver-management" options="-parameters" />
+      <module name="passenger-management" options="-parameters" />
+      <module name="trip-management" options="-parameters" />
+    </option>
+  </component>
+</project>
